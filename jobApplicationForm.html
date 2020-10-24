@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="jobapp.css">
+    </head>
+    <head>
+        <title>Job Application</title>
+    </head>
+    <body>
+        <h2>Job Application</h2>
+        <form action="http://gclass.alexburner.com/formtest.php" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="field" id="PI">
+                <label>First Name:</label>
+                <input type="text" name="name">
+            </div>
+            <div class="field" id="PI">
+                <label>Last Name:</label>
+                <input type="text" name="name">
+            </div>
+            <div class="field" id="PI">
+                <label>Email:</label>
+                <input type="text" name="email">
+            </div>
+            <div class="field" id="PI">
+                <label>Cell Phone:</label>
+                <input type="text" name="cell_phone">
+            </div>
+            <div class="field" id="PI">
+                <label>Home Phone:</label>
+                <input type="text" name="home_phone">
+            </div>
+            <div class="field" id="PI">
+                <label>Password:</label>
+                <input type="password" name="password">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Logistics</legend>
+            <div class="field" id="Logistics">
+                <label>Why do you deserve this job?</label><br>
+                <textarea name="deserve" rows="6" cols="60"></textarea>
+            </div>
+            <div class="field" id="Logistics">
+                <label>Please add relevant work experience below.</label><br>
+                <textarea name="work_xp" rows="6" cols="60"></textarea>
+            </div>
+            <div class="field" id="Logistics">
+                <label>Are you over the age of 18?</label>
+                <input type="radio" name="age" value="yes">Yes
+                <input type="radio" name="age" value="no">No
+            </div>
+            <div class="field" id="Logistics">
+                <label>What days are you available to work?</label>
+                <ul>
+                    <li><input type="checkbox" name="days_sun" value="sunday">Sunday</li>
+                    <li><input type="checkbox" name="days_mon" value="monday">Monday</li>
+                    <li><input type="checkbox" name="days_tue" value="tuesday">Tuesday</li>
+                    <li><input type="checkbox" name="days_wed" value="wednesday">Wednesday</li>
+                    <li><input type="checkbox" name="days_thu" value="thursday">Thursday</li>
+                    <li><input type="checkbox" name="days_fri" value="friday">Friday</li>
+                    <li><input type="checkbox" name="days_sat" value="saturday">Saturday</li>
+                </ul>
+            <div class="field" id="Logistics">
+                <label>What times are you available to work?</label>
+                <ul>
+                    <li><input type="checkbox" name="morning" value="6am-12pm">6am-12pm</li>
+                    <li><input type="checkbox" name="afternoon" value="12pm-6pm">12pm-6pm</li>
+                    <li><input type="checkbox" name="night" value="6pm-12am">6pm-12am</li>
+                </ul>
+            </div>
+            <div class="field" id="Logistics">
+                <label>Will you be able to work on holidays?</label>
+                <input type="radio" name="holidays" value="yes">Yes
+                <input type="radio" name="holidays" value="no">No
+            </div>
+            <div id="Logistics">
+                <label>What is your mode of transportation?</label>
+                <select name="transportation">
+                    <option value="" selected="true">Choose a Mode</option>
+                    <option value="car">Car</option>
+                    <option value="public_transit">Public Transit</option>
+                    <option value="bike">Bike</option>
+                    <option value="taxi">Taxi</option>
+                    <option value="uber_lyft">Uber/Lyft</option>
+                    <option value="walk">Walk</option>
+                    <option value="carpool">Carpool</option>
+                </select>
+            </div>
+            <div class="field" id="Logistics">
+                <label>Will you need a parking pass?</label>
+                <input type="radio" name="parking" value="yes">Yes
+                <input type="radio" name="parking" value="no">No
+            </div>
+            <div id="Logistics">
+                <label>What is the best way to reach you?</label>
+                <select name="communication">
+                    <option value="" selected="true">Choose a Method</option>
+                    <option value="cell">Cell phone</option>
+                    <option value="home">Home phone</option>
+                    <option value="email">Email</option>
+                </select>
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit form">
+        </form>
+    </body>
+</html>
